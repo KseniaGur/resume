@@ -1,0 +1,136 @@
+    \documentclass[11pt]{article}
+\usepackage[margin=1.6cm]{geometry}
+\usepackage[T2A,T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+
+\setlist[itemize]{nosep, leftmargin=1.2cm, label=\textbullet, topsep=2pt, itemsep=2pt}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    {\LARGE \textbf{Гурьянова Ксения}}\\[4pt]
+    \large ML Engineer / Data Scientist
+\end{center}
+
+\begin{center}
+    \href{mailto:keguryanova@gmail.com}{keguryanova@gmail.com} \,|\, 
+    \href{https://github.com/KseniaGu}{github.com/KseniaGu}
+\end{center}
+
+\vspace{10pt}
+
+% --- PROFILE ---
+\noindent \textbf{Профиль:} Опыт работы более 4 лет в сфере разработки и внедрения решений для e-commerce и аналитических систем. Владею полным циклом ML-разработки (сбор — обработка данных — обучение — оптимизация — деплой). Основной фокус: обработка естественного языка (NLP). Имею опыт работы с компьютерным зрением (CV), навыки работы с СУБД, а также опыт разработки Graph RAG-системы в рамках \href{https://github.com/KseniaGu/remnote-graph-rag}{практического проекта}.
+
+\vspace{10pt}
+
+% --- EXPERIENCE ---
+\section*{Опыт работы}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{2021--2025} & \textbf{ML Engineer} \,|\, \href{https://scented.ai/}{scented.ai}
+\end{tabularx}
+
+\vspace{2pt}
+\noindent \textit{AI-стартап, разрабатывающий решения для парфюмерной индустрии}
+
+\vspace{4pt}
+\noindent \textbf{Основные задачи:}
+\begin{itemize}
+  \item Разработала пайплайн сопоставления товаров (product matching) с использованием ML-подходов.
+  \item Настроила поисковую систему для текстовых данных.
+  \item Участвовала в разработке REST API-сервиса (FastAPI, Docker); отвечала за логирование.
+  \item Реализовывала взаимодействие с базами данных: PostgreSQL, MongoDB, Redis.
+\end{itemize}
+
+\vspace{10pt}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{2023--2025} & \textbf{ML Education Specialist} \,|\, \href{https://school.razinkov.ai/}{school.razinkov.ai}
+\end{tabularx}
+
+\vspace{2pt}
+\noindent \textit{AI онлайн-школа, посвященная подготовке специалистов в области машинного обучения}
+
+\vspace{4pt}
+\noindent \textbf{Основные задачи:}
+\begin{itemize}
+  \item Участвовала в разработке практических заданий по базовому и продвинутому глубокому обучению: классические алгоритмы, свёрточные нейронные сети (CNN, ResNet, U-Net), архитектура трансформер (Transformer, ViT).
+  \item Участвовала в составлении рекомендаций по практикам MLOps: мониторинг (Neptune.ai/MLflow), вывод моделей в эксплуатацию (Docker, FastAPI, ONNX).
+  \item Проводила эксперименты: классификация и регрессия (изображения, табличные данные), поиск похожих изображений (image retrieval), сегментация изображений (semantic segmentation), машинный перевод (machine translation).
+  \item Проводила код-ревью.
+\end{itemize}
+
+\vspace{10pt}
+
+% --- TECHNICAL SKILLS ---
+\section*{Технические навыки}
+
+\noindent \textbf{Языки программирования:} Python; SQL. Изучались: C++/C\#\\[4pt]
+\textbf{Машинное обучение:}
+\begin{itemize}
+  \item \textbf{Фреймворки:} PyTorch, scikit-learn. Есть опыт с TensorFlow, Keras.
+  \item \textbf{Библиотеки:} Transformers, Sentence Transformers, NumPy, Pandas, spaCy, NLTK.
+  \item \textbf{LLM:} практический опыт применения LLM (GPT, Gemini, Mistral, Qwen) и их развёртывания через vLLM/Ollama, а также разработки Graph RAG‑системы (LangGraph, LlamaIndex, Cloud Run).
+  \item \textbf{Исследовательский опыт:} архитектура Transformer (Encoder–Decoder, BERT, RoBERTa, Siamese BERT, ViT), CNN (VGG, ResNet, U‑Net), RNN (LSTM/ESIM), GAN, классический ML (логистическая/линейная регрессии, SVM, деревья решений и т.п.).
+\end{itemize}
+\vspace{4pt}
+\noindent \textbf{Базы данных и поиск:} PostgreSQL, Redis, MongoDB, ClickHouse, Faiss, Meilisearch.\\[4pt]
+\textbf{MLOps и развёртывание:} Docker, FastAPI, Git (GitHub (CI/CD с Actions), GitLab (CI/CD)), Neptune.ai, MLflow, ONNX, TorchScript, Google Cloud Platform (GCP).\\[4pt]
+
+\vspace{10pt}
+
+% --- EDUCATION ---
+\section*{Образование}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{2019--2021} & \textbf{Высшее образование (магистратура)} \,|\, КФУ, Институт вычислительной математики и информационных технологий, направление «Фундаментальная информатика и информационные технологии», профиль «Машинное обучение и компьютерное зрение».
+\end{tabularx}
+
+\vspace{6pt}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{2014--2019} & \textbf{Высшее образование (бакалавриат)} \,|\, КФУ, Институт вычислительной математики и информационных технологий, направление «Фундаментальная информатика и информационные технологии», средний балл 5,0 (из 5,0).
+\end{tabularx}
+
+\vspace{6pt}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{2009--2014} & \textbf{Среднее (полное) общее образование} \,|\, МАОУ «Лицей №131», золотая медаль.
+\end{tabularx}
+
+\vspace{6pt}
+
+\noindent \textbf{Сертификат о прохождении курса на Coursera:} \href{https://coursera.org/share/4f64abf86f701eb8df6e2b00cb6e4768}{«SQL for Data Science»}
+
+
+\vspace{10pt}
+
+% --- PROJECTS/THESIS ---
+\section*{Выпускные работы}
+
+\subsection* {Магистерская диссертация}
+\textbf{Название:} «Исследование задачи определения корректности логического вывода на естественном языке с использованием машинного обучения»\\
+\textbf{Описание:} реализована модель глубокого обучения для решения исследуемой задачи, разработан алгоритм дополнения данных с применением языковых моделей, собран набор данных для проведения экспериментов по обработке длинных текстов моделями глубокого обучения на основе архитектуры Transformer.\\
+\textbf{Ссылки:} \href{https://github.com/KseniaGu/NLI-based-augmentation}{NLI-based data augmentation}, \href{https://github.com/KseniaGu/movie-screenplays/tree/main}{Movie screenplays}, \href{https://www.kaggle.com/datasets/gufukuro/movie-scripts-corpus}{Movie Scripts Corpus}
+
+\vspace{8pt}
+
+
+\subsection* {Выпускная квалификационная работа}
+\textbf{Название:} «Применение методов машинного обучения при составлении аннотации текста»\\
+\textbf{Описание:} разработан алгоритм автоматического реферирования текстов на русском языке, основанный на кластеризации векторных представлений предложений.
+
+\end{document}

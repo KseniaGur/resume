@@ -1,0 +1,58 @@
+name: Deploy LaTeX CV to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+    paths: [ 'main.tex' ]
+  workflow_dispatch:
+
+env:
+  FILENAME: resume_GuryanovaKE
+  FILENAME_EN: resume_en_GuryanovaKE
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: main.tex
+          args: "-jobname=${{ env.FILENAME }} -pdf -interaction=nonstopmode -halt-on-error"
+
+      - name: Compile LaTeX (en)
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: main_en.tex
+          args: "-jobname=${{ env.FILENAME_EN }} -pdf -interaction=nonstopmode -halt-on-error"
+
+      - name: Prepare for deployment
+        run: |
+          mkdir public
+          cp "$FILENAME.pdf" public/
+          cp "$FILENAME_EN.pdf" public/
+          echo '<meta http-equiv="refresh" content="0; url=${{ env.FILENAME }}.pdf">' > public/index.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,136 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.6cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+
+\setlist[itemize]{nosep, leftmargin=1.2cm, label=\textbullet, topsep=2pt, itemsep=2pt}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    {\LARGE \textbf{Guryanova Ksenia}}\\[4pt]
+    \large ML Engineer / Data Scientist
+\end{center}
+
+\begin{center}
+    \href{mailto:keguryanova@gmail.com}{keguryanova@gmail.com} \,|\,
+    \href{https://github.com/KseniaGu}{github.com/KseniaGu}
+\end{center}
+
+\vspace{10pt}
+
+% --- PROFILE ---
+\noindent \textbf{Profile:} Over 4 years of experience developing and deploying ML solutions for e-commerce and analytical systems. Proficient in the full ML development lifecycle (data collection -- preprocessing -- training -- optimization -- deployment). Primary focus: Natural Language Processing (NLP). Additional experience in Computer Vision (CV), database management, and Graph RAG system development in a \href{https://github.com/KseniaGu/remnote-graph-rag}{practical project}.
+
+\vspace{10pt}
+
+% --- EXPERIENCE ---
+\section*{Work Experience}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{2021--2025} & \textbf{ML Engineer} \,|\, \href{https://scented.ai/}{scented.ai}
+\end{tabularx}
+
+\vspace{2pt}
+\noindent \textit{AI startup developing solutions for the perfume industry}
+
+\vspace{4pt}
+\noindent \textbf{Key Responsibilities:}
+\begin{itemize}
+  \item Developed a product matching pipeline using ML-based approaches.
+  \item Configured a full-text search system for text data.
+  \item Participated in the development of a REST API service (FastAPI, Docker); responsible for logging infrastructure.
+  \item Implemented database integrations: PostgreSQL, MongoDB, Redis.
+\end{itemize}
+
+\vspace{10pt}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{2023--2025} & \textbf{ML Education Specialist} \,|\, \href{https://school.razinkov.ai/}{school.razinkov.ai}
+\end{tabularx}
+
+\vspace{2pt}
+\noindent \textit{Online AI school focused on training machine learning specialists}
+
+\vspace{4pt}
+\noindent \textbf{Key Responsibilities:}
+\begin{itemize}
+  \item Contributed to the development of practical assignments covering foundational and advanced deep learning: classical algorithms, convolutional neural networks (CNN, ResNet, U-Net), and transformer-based architectures (Transformer, ViT).
+  \item Assisted in compiling recommendations for MLOps practices: monitoring (Neptune.ai/MLflow) and model serving in production (Docker, FastAPI, ONNX).
+  \item Conducted experiments across diverse tasks: image and tabular classification/regression, image retrieval, semantic segmentation, and machine translation.
+  \item Performed code reviews.
+\end{itemize}
+
+\vspace{10pt}
+
+% --- TECHNICAL SKILLS ---
+\section*{Technical Skills}
+
+\noindent \textbf{Programming Languages:} Python; SQL. Studied: C++/C\#\\[4pt]
+\textbf{Machine Learning:}
+\begin{itemize}
+  \item \textbf{Frameworks:} PyTorch, scikit-learn. Experience with TensorFlow, Keras.
+  \item \textbf{Libraries:} Transformers, Sentence Transformers, NumPy, Pandas, spaCy, NLTK.
+  \item \textbf{LLMs:} Practical experience with LLMs (GPT, Gemini, Mistral, Qwen), model deployment via vLLM/Ollama, and Graph RAG system development (LangGraph, LlamaIndex, Cloud Run).
+  \item \textbf{Research Experience:} Transformer architectures (Encoder--Decoder, BERT, RoBERTa, Siamese BERT, ViT), CNN (VGG, ResNet, U-Net), RNN (LSTM/ESIM), GAN, classical ML (logistic/linear regression, SVM, decision trees, etc.).
+\end{itemize}
+\vspace{4pt}
+\noindent \textbf{Databases \& Search:} PostgreSQL, Redis, MongoDB, ClickHouse, Faiss, Meilisearch.\\[4pt]
+\textbf{MLOps \& Deployment:} Docker, FastAPI, Git (GitHub (CI/CD with Actions), GitLab (CI/CD)), Neptune.ai, MLflow, ONNX, TorchScript, Google Cloud Platform (GCP).\\[4pt]
+
+\vspace{10pt}
+
+% --- EDUCATION ---
+\section*{Education}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{2019--2021} & \textbf{M.Sc.\ in Computer Science} \,|\, Kazan Federal University, Institute of Computational Mathematics and Information Technologies. Specialization: Fundamental Computer Science and Information Technologies. Track: Machine Learning and Computer Vision.
+\end{tabularx}
+
+\vspace{6pt}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{2014--2019} & \textbf{B.Sc.\ in Computer Science} \,|\, Kazan Federal University, Institute of Computational Mathematics and Information Technologies. Specialization: Fundamental Computer Science and Information Technologies. GPA: 5.0/5.0.
+\end{tabularx}
+
+\vspace{6pt}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}l X@{}}
+\textbf{2009--2014} & \textbf{Secondary Education (High School)} \,|\, The Municipal Autonomous Educational Institution ``Lyceum №131'', Gold Medal.
+\end{tabularx}
+
+\vspace{6pt}
+
+\noindent \textbf{Coursera Certificate:} \href{https://coursera.org/share/4f64abf86f701eb8df6e2b00cb6e4768}{``SQL for Data Science''}
+
+
+\vspace{10pt}
+
+% --- PROJECTS/THESIS ---
+\section*{Academic Theses}
+
+\subsection*{Master's Thesis}
+\textbf{Title:} ``Investigating Natural Language Inference correctness using machine Learning''\\
+\textbf{Description:} Implemented a deep learning model for the NLI task; developed a data augmentation algorithm leveraging language models; assembled a dataset for long-text processing experiments with Transformer-based deep learning models.\\
+\textbf{Links:} \href{https://github.com/KseniaGu/NLI-based-augmentation}{NLI-based data augmentation}, \href{https://github.com/KseniaGu/movie-screenplays/tree/main}{Movie screenplays}, \href{https://www.kaggle.com/datasets/gufukuro/movie-scripts-corpus}{Movie Scripts Corpus}
+
+\vspace{8pt}
+
+
+\subsection*{Bachelor's Thesis}
+\textbf{Title:} ``Applying machine learning methods to automatic text summarization''\\
+\textbf{Description:} Developed an automatic text summarization algorithm for Russian-language documents based on clustering of sentence embeddings.
+
+\end{document}
